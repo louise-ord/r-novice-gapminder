@@ -28,7 +28,7 @@ do these operations using the normal base R operations:
 
 
 ```r
-mean(gapminder$gdpPercap[gapminder$continent == "Africa"])
+mean(gapminder[gapminder$continent == "Africa", "gdpPercap"])
 ```
 
 ```{.output}
@@ -36,7 +36,7 @@ mean(gapminder$gdpPercap[gapminder$continent == "Africa"])
 ```
 
 ```r
-mean(gapminder$gdpPercap[gapminder$continent == "Americas"])
+mean(gapminder[gapminder$continent == "Americas", "gdpPercap"])
 ```
 
 ```{.output}
@@ -44,7 +44,7 @@ mean(gapminder$gdpPercap[gapminder$continent == "Americas"])
 ```
 
 ```r
-mean(gapminder$gdpPercap[gapminder$continent == "Asia"])
+mean(gapminder[gapminder$continent == "Asia", "gdpPercap"])
 ```
 
 ```{.output}
